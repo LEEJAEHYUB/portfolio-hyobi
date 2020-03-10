@@ -81,7 +81,7 @@ function Main() {
 				</Header>
 				<Content
 					className="site-layout"
-					style={{ padding: "0 50px", marginTop: 20, height: "920px", marginBottom: 30 }}
+					style={{ padding: "0 50px", marginTop: 20, height: "1200px", marginBottom: 30, overflow: "scroll" }}
 				>
 					<div className="site-layout-background" style={{ padding: 30, marginTop: "3%" }}>
 						<Switch>
