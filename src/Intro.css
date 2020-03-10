@@ -1,0 +1,11 @@
+div.mainTxt {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+}
+
+div.nextBtn {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: bold;
+}

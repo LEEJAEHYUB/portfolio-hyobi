@@ -1,11 +1,11 @@
 import React from "react";
 
-import Main from "./pages/Main";
+import Intro from "./Intro";
 
 function App() {
 	return (
 		<>
-			<Main />
+			<Intro />
 		</>
 	);
 }

@@ -1,0 +1,17 @@
+* {
+	font-family: "Titillium Web", sans-serif;
+}
+
+.naviBar {
+	background-color: rgba(125, 142, 240, 0.87);
+}
+
+.naviBarContent {
+	border-radius: 20px;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+	background-color: #6c5ce7;
+	font-weight: bold;
+}
