@@ -27,16 +27,31 @@ function Project() {
 				<Col span={20} className="contents">
 					<Row gutter={[8, 16]}>
 						<Col flex="500px" className="contentLeft">
-							<img className="imgBox-1" src={finalPic} alt="finalProject1" onClick={() => {}} />
-							<img className="imgBox-1" src={finalPic3} alt="finalProject2" />
+							<img
+								className="imgBox-1"
+								src={finalPic}
+								alt="finalProject1"
+								onClick={() => {
+									window.open("https://github.com/LEEJAEHYUB/Serendipity_client");
+								}}
+							/>
+							<img
+								className="imgBox-1"
+								src={finalPic3}
+								alt="finalProject2"
+								onClick={() => {
+									window.open("https://github.com/LEEJAEHYUB/Serendipity_client");
+								}}
+							/>
 						</Col>
 						<Col flex="auto" className="contentRight" style={{ padding: 0 }}>
 							<div>
 								<span style={{ fontSize: "45px", fontWeight: "bold" }}>
 									Serendipity - eat, pray, love
 								</span>
-
-								<span style={{ fontSize: "30px", fontWeight: "bold", marginLeft: "3%" }}>
+							</div>
+							<div>
+								<span style={{ fontSize: "30px", fontWeight: "bold" }}>
 									Team Serengeti - Team Member
 								</span>
 							</div>
@@ -58,6 +73,7 @@ function Project() {
 										window.open("https://github.com/LEEJAEHYUB/Serendipity_client");
 									}}
 								>
+									{" "}
 									https://github.com/LEEJAEHYUB/Serendipity_client
 								</span>
 							</div>
@@ -81,16 +97,22 @@ function Project() {
 				<Col span={20} className="contents">
 					<Row gutter={[8, 16]}>
 						<Col flex="500px" className="contentLeft">
-							<img className="imgBox" src={firstPic} alt="finalProject" />
+							<img
+								className="imgBox"
+								src={firstPic}
+								alt="finalProject"
+								onClick={() => {
+									window.open("https://github.com/LEEJAEHYUB/diSlack_client");
+								}}
+							/>
 						</Col>
 
 						<Col flex="auto" className="contentRight" style={{ padding: 0 }}>
 							<div>
 								<span style={{ fontSize: "45px", fontWeight: "bold" }}>diSlack</span>
-
-								<span style={{ fontSize: "30px", fontWeight: "bold", marginLeft: "3%" }}>
-									Team Crong - Team Leader
-								</span>
+							</div>
+							<div>
+								<span style={{ fontSize: "30px", fontWeight: "bold" }}>Team Crong - Team Leader</span>
 							</div>
 							<div style={{ marginTop: 10 }}>
 								<FiCalendar size={20} /> <span style={{ fontSize: 20 }}>01/2019 ~ 01/2019</span>
@@ -110,6 +132,7 @@ function Project() {
 										window.open("https://github.com/LEEJAEHYUB/diSlack_client");
 									}}
 								>
+									{" "}
 									https://github.com/LEEJAEHYUB/diSlack_client
 								</span>
 							</div>
