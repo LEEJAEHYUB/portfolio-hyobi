@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-hyobi/static/css/main.6f45bd00.chunk.css",
-    "main.js": "/portfolio-hyobi/static/js/main.fddacd14.chunk.js",
-    "main.js.map": "/portfolio-hyobi/static/js/main.fddacd14.chunk.js.map",
+    "main.css": "/portfolio-hyobi/static/css/main.79a04efb.chunk.css",
+    "main.js": "/portfolio-hyobi/static/js/main.1306882b.chunk.js",
+    "main.js.map": "/portfolio-hyobi/static/js/main.1306882b.chunk.js.map",
     "runtime-main.js": "/portfolio-hyobi/static/js/runtime-main.fc72f5c3.js",
     "runtime-main.js.map": "/portfolio-hyobi/static/js/runtime-main.fc72f5c3.js.map",
     "static/css/2.78435eec.chunk.css": "/portfolio-hyobi/static/css/2.78435eec.chunk.css",
-    "static/js/2.a5b4c93c.chunk.js": "/portfolio-hyobi/static/js/2.a5b4c93c.chunk.js",
-    "static/js/2.a5b4c93c.chunk.js.map": "/portfolio-hyobi/static/js/2.a5b4c93c.chunk.js.map",
+    "static/js/2.b498922a.chunk.js": "/portfolio-hyobi/static/js/2.b498922a.chunk.js",
+    "static/js/2.b498922a.chunk.js.map": "/portfolio-hyobi/static/js/2.b498922a.chunk.js.map",
     "index.html": "/portfolio-hyobi/index.html",
-    "precache-manifest.e6cebdd885785c11f83ea8d37a9555df.js": "/portfolio-hyobi/precache-manifest.e6cebdd885785c11f83ea8d37a9555df.js",
+    "precache-manifest.08753e8fa698446a7ab27e5e58326fe6.js": "/portfolio-hyobi/precache-manifest.08753e8fa698446a7ab27e5e58326fe6.js",
     "service-worker.js": "/portfolio-hyobi/service-worker.js",
     "static/css/2.78435eec.chunk.css.map": "/portfolio-hyobi/static/css/2.78435eec.chunk.css.map",
-    "static/css/main.6f45bd00.chunk.css.map": "/portfolio-hyobi/static/css/main.6f45bd00.chunk.css.map",
-    "static/js/2.a5b4c93c.chunk.js.LICENSE.txt": "/portfolio-hyobi/static/js/2.a5b4c93c.chunk.js.LICENSE.txt",
+    "static/css/main.79a04efb.chunk.css.map": "/portfolio-hyobi/static/css/main.79a04efb.chunk.css.map",
+    "static/js/2.b498922a.chunk.js.LICENSE.txt": "/portfolio-hyobi/static/js/2.b498922a.chunk.js.LICENSE.txt",
     "static/media/antd.png": "/portfolio-hyobi/static/media/antd.c9241552.png",
     "static/media/apollo.png": "/portfolio-hyobi/static/media/apollo.820408cc.png",
+    "static/media/email.png": "/portfolio-hyobi/static/media/email.1e34e1aa.png",
     "static/media/finalProject.gif": "/portfolio-hyobi/static/media/finalProject.9786138f.gif",
     "static/media/finalProject3.gif": "/portfolio-hyobi/static/media/finalProject3.75c64e67.gif",
     "static/media/firstProject.gif": "/portfolio-hyobi/static/media/firstProject.ca307481.gif",
@@ -27,13 +28,14 @@
     "static/media/notion.png": "/portfolio-hyobi/static/media/notion.7c71d087.png",
     "static/media/react_native.png": "/portfolio-hyobi/static/media/react_native.6af89122.png",
     "static/media/reacthooks.png": "/portfolio-hyobi/static/media/reacthooks.8395917a.png",
-    "static/media/slack.png": "/portfolio-hyobi/static/media/slack.342e5bfa.png"
+    "static/media/slack.png": "/portfolio-hyobi/static/media/slack.342e5bfa.png",
+    "static/media/tistory.png": "/portfolio-hyobi/static/media/tistory.16fb6e98.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fc72f5c3.js",
     "static/css/2.78435eec.chunk.css",
-    "static/js/2.a5b4c93c.chunk.js",
-    "static/css/main.6f45bd00.chunk.css",
-    "static/js/main.fddacd14.chunk.js"
+    "static/js/2.b498922a.chunk.js",
+    "static/css/main.79a04efb.chunk.css",
+    "static/js/main.1306882b.chunk.js"
   ]
 }
