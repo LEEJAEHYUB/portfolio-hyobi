@@ -13,7 +13,7 @@ import firstPic from "../images/firstProject.gif";
 
 function Project() {
 	return (
-		<>
+		<div className="project">
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
@@ -22,7 +22,7 @@ function Project() {
 				<Col span={4} />
 			</Row>
 
-			<Row gutter={[8, 16]} style={{ marginTop: "3%" }}>
+			<Row gutter={[8, 16]} style={{ marginTop: "3%" }} data-aos="fade-up">
 				<Col span={2} />
 				<Col span={20} className="contents">
 					<Row gutter={[8, 16]}>
@@ -92,7 +92,7 @@ function Project() {
 				<Col span={2} />
 			</Row>
 
-			<Row gutter={[8, 16]} style={{ marginTop: "2%" }}>
+			<Row gutter={[8, 16]} style={{ marginTop: "2%" }} data-aos="fade-up">
 				<Col span={2} />
 				<Col span={20} className="contents">
 					<Row gutter={[8, 16]}>
@@ -141,7 +141,7 @@ function Project() {
 				</Col>
 				<Col span={2} />
 			</Row>
-		</>
+		</div>
 	);
 }
 

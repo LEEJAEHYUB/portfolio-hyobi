@@ -1,0 +1,17 @@
+.contactCol {
+	text-align: -webkit-center;
+	margin-top: 4%;
+}
+
+.contactCard {
+	margin: 1%;
+	box-shadow: 2px 2px 2px 2px grey;
+	border-radius: 40px;
+	width: 100px;
+	height: 100px;
+}
+
+.contactText {
+	margin-top: 5%;
+	font-size: 30px;
+}
