@@ -13,7 +13,7 @@ import firstPic from "../images/firstProject.gif";
 
 function Project() {
 	return (
-		<div className="project">
+		<>
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
@@ -141,7 +141,7 @@ function Project() {
 				</Col>
 				<Col span={2} />
 			</Row>
-		</div>
+		</>
 	);
 }
 
