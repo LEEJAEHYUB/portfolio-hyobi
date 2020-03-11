@@ -7,6 +7,7 @@ import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Project from "./Project";
 import Contact from "./Contact";
+import Skills from "./Skills";
 import "./Main.css";
 
 const { Header, Content, Footer } = Layout;
@@ -55,6 +56,18 @@ function Main() {
 						</Menu.Item>
 
 						<Menu.Item
+							key="Skills"
+							className="naviBarContent"
+							onClick={val => {
+								setItem(val.key);
+							}}
+						>
+							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main/Skills">
+								Skills
+							</Link>
+						</Menu.Item>
+
+						<Menu.Item
 							key="Project"
 							className="naviBarContent"
 							onClick={val => {
@@ -86,8 +99,9 @@ function Main() {
 					<div className="site-layout-background" style={{ padding: 30, marginTop: "3%" }}>
 						<Switch>
 							<Route exact path="/portfolio-hyobi/Main" render={() => <AboutMe />} />
-							<Route exact path="/portfolio-hyobi/Main/Project" render={() => <Project />} />
 							<Route exact path="/portfolio-hyobi/Main/Experience" render={() => <Experience />} />
+							<Route exact path="/portfolio-hyobi/Main/Skills" render={() => <Skills />} />
+							<Route exact path="/portfolio-hyobi/Main/Project" render={() => <Project />} />
 							<Route exact path="/portfolio-hyobi/Main/Contact" render={() => <Contact />} />
 						</Switch>
 					</div>
