@@ -1,48 +1,637 @@
-.contents {
-	height: 300px;
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px 2px grey;
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
 
-	/* border-style: solid;
-	border-width: 1px; */
+.ant-modal-mask {
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.contentLeft {
-	/* border-style: solid; */
-	/* border-width: 1px; */
-	/* border-color: blue; */
-	height: 100%;
-	height: 300px;
-}
-
-.contentRight {
-	/* border-style: solid; */
-	/* border-width: 1px; */
-	/* border-color: blue; */
-	height: 300px;
+.ant-modal-body {
 	overflow: scroll;
-	margin-left: 30px;
-	text-overflow: clip;
-	padding: 0;
+	height: 900px;
 }
 
-.imgBox-1 {
-	width: 50%;
-	height: 100%;
-	border-radius: 10px;
-	cursor: pointer;
-}
-.imgBox {
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	cursor: pointer;
+.ant-modal-footer {
+	display: none;
 }
 
-.ant-row {
-	flex-flow: inherit;
+@media (min-width: 1281px) {
+	.projectCard {
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contentsContainer {
+		width: 500px;
+		height: 600px;
+		box-shadow: 2px 2px 2px 2px grey;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.contents {
+		overflow: scroll;
+		text-align: -webkit-center;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contents::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.contentPic {
+		width: 100%;
+		height: 70%;
+
+		position: relative;
+		overflow: hidden;
+	}
+
+	.imgBoxText {
+		position: absolute;
+
+		top: 42%;
+		left: 28%;
+
+		color: black;
+		font-size: 60px;
+		font-weight: bold;
+
+		opacity: 0;
+
+		transition: all 0.4s ease;
+	}
+
+	.contentPic img {
+		transition: all 0.3s ease;
+	}
+
+	.contentPic:hover img {
+		-webkit-filter: blur(4px);
+		filter: blur(4px);
+	}
+
+	.contentPic:hover :not(img) {
+		z-index: 100;
+		opacity: 1;
+	}
+
+	.contentDes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 28%;
+		text-overflow: clip;
+		overflow: scroll;
+		padding: 0;
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contentDes::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.imgBox {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.ant-row {
+		/* flex-flow: inherit; */
+	}
+
+	.webSite {
+		cursor: pointer;
+	}
+
+	.projectModal {
+		width: 1200px;
+	}
 }
 
-.webSite {
-	cursor: pointer;
+/*
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+	##Device = 랩탑, 데스크탑
+	##Screen = 1025px에서 1280px 사이
+	*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.projectCard {
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contentsContainer {
+		width: 500px;
+		height: 600px;
+		box-shadow: 2px 2px 2px 2px grey;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.contents {
+		overflow: scroll;
+		text-align: -webkit-center;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contents::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.contentPic {
+		width: 100%;
+		height: 70%;
+
+		position: relative;
+		overflow: hidden;
+
+		transition: all 0.3s ease;
+	}
+
+	.contentPic:hover {
+		-webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+		filter: blur(7px);
+	}
+
+	.imgBoxText {
+		z-index: 2;
+		position: absolute;
+
+		top: 150%;
+
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.imgBoxText:hover {
+		top: 50%;
+	}
+
+	.contentDes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 28%;
+		text-overflow: clip;
+		overflow: scroll;
+		padding: 0;
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contentDes::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.imgBox {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.ant-row {
+		/* flex-flow: inherit; */
+	}
+
+	.webSite {
+		cursor: pointer;
+	}
+
+	.projectModal {
+		width: 1200px;
+	}
+}
+
+/*
+	##Device = Tablets, Ipads (portrait),
+	##Screen = B/w 768px to 1024px
+	##Device = 태블릿, 아이패드(세로),
+	##Screen = 768px에서 1024px 사이
+	*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.projectCard {
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contentsContainer {
+		width: 500px;
+		height: 600px;
+		box-shadow: 2px 2px 2px 2px grey;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.contents {
+		overflow: scroll;
+		text-align: -webkit-center;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contents::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.contentPic {
+		width: 100%;
+		height: 70%;
+
+		position: relative;
+		overflow: hidden;
+
+		transition: all 0.3s ease;
+	}
+
+	.contentPic:hover {
+		-webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+		filter: blur(7px);
+	}
+
+	.imgBoxText {
+		z-index: 2;
+		position: absolute;
+
+		top: 150%;
+
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.imgBoxText:hover {
+		top: 50%;
+	}
+
+	.contentDes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 28%;
+		text-overflow: clip;
+		overflow: scroll;
+		padding: 0;
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contentDes::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.imgBox {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.ant-row {
+		/* flex-flow: inherit; */
+	}
+
+	.webSite {
+		cursor: pointer;
+	}
+
+	.projectModal {
+		width: 1200px;
+	}
+}
+
+/*
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+	##Device = 태블릿, 아이패드(가로)
+	##Screen = 768px에서 1024px 사이
+	*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.projectCard {
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contentsContainer {
+		width: 500px;
+		height: 600px;
+		box-shadow: 2px 2px 2px 2px grey;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.contents {
+		overflow: scroll;
+		text-align: -webkit-center;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contents::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.contentPic {
+		width: 100%;
+		height: 70%;
+
+		position: relative;
+		overflow: hidden;
+
+		transition: all 0.3s ease;
+	}
+
+	.contentPic:hover {
+		-webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+		filter: blur(7px);
+	}
+
+	.imgBoxText {
+		z-index: 2;
+		position: absolute;
+
+		top: 150%;
+
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.imgBoxText:hover {
+		top: 50%;
+	}
+
+	.contentDes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 28%;
+		text-overflow: clip;
+		overflow: scroll;
+		padding: 0;
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contentDes::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.imgBox {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.ant-row {
+		/* flex-flow: inherit; */
+	}
+
+	.webSite {
+		cursor: pointer;
+	}
+
+	.projectModal {
+		width: 1200px;
+	}
+}
+
+/*
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+	##Device = 저해상도 태블릿, 모바일(가로)
+	##Screen = 481px에서 767px 사이
+	*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.projectCard {
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contentsContainer {
+		width: 500px;
+		height: 600px;
+		box-shadow: 2px 2px 2px 2px grey;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.contents {
+		overflow: scroll;
+		text-align: -webkit-center;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contents::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.contentPic {
+		width: 100%;
+		height: 70%;
+
+		position: relative;
+		overflow: hidden;
+
+		transition: all 0.3s ease;
+	}
+
+	.contentPic:hover {
+		-webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+		filter: blur(7px);
+	}
+
+	.imgBoxText {
+		z-index: 2;
+		position: absolute;
+
+		top: 150%;
+
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.imgBoxText:hover {
+		top: 50%;
+	}
+
+	.contentDes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 28%;
+		text-overflow: clip;
+		overflow: scroll;
+		padding: 0;
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contentDes::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.imgBox {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.ant-row {
+		/* flex-flow: inherit; */
+	}
+
+	.webSite {
+		cursor: pointer;
+	}
+
+	.projectModal {
+		width: 1200px;
+	}
+}
+
+/*
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+	##Device = 대부분의 스마트폰 모바일 기기(세로)
+	##Screen = 320px에서 479px 사이
+	*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.projectCard {
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contentsContainer {
+		width: 500px;
+		height: 600px;
+		box-shadow: 2px 2px 2px 2px grey;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.contents {
+		overflow: scroll;
+		text-align: -webkit-center;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contents::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.contentPic {
+		width: 100%;
+		height: 70%;
+
+		position: relative;
+		overflow: hidden;
+
+		transition: all 0.3s ease;
+	}
+
+	.contentPic:hover {
+		-webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+		filter: blur(7px);
+	}
+
+	.imgBoxText {
+		z-index: 2;
+		position: absolute;
+
+		top: 150%;
+
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.imgBoxText:hover {
+		top: 50%;
+	}
+
+	.contentDes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 28%;
+		text-overflow: clip;
+		overflow: scroll;
+		padding: 0;
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.contentDes::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
+	.imgBox {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.ant-row {
+		/* flex-flow: inherit; */
+	}
+
+	.webSite {
+		cursor: pointer;
+	}
+
+	.projectModal {
+		width: 1200px;
+	}
 }

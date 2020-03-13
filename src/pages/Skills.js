@@ -46,9 +46,6 @@ function Skills() {
 					<span className="skillBox">
 						<img className="skillImg" src={mobx} alt="mobx" />
 					</span>
-					<span className="skillBox">
-						<img className="skillImg" src={apollo} alt="apollo" />
-					</span>
 				</Col>
 			</Row>
 
@@ -63,14 +60,15 @@ function Skills() {
 						<img className="skillImg" src={reacthooks} alt="reacthooks" />
 					</span>
 					<span className="skillBox">
+						<img className="skillImg" src={apollo} alt="apollo" />
+					</span>
+					<span className="skillBox">
 						<img className="skillImg" src={nodejs} alt="nodejs" />
 					</span>
 					<span className="skillBox">
 						<img className="skillImg" src={express} alt="express" />
 					</span>
-					<span className="skillBox">
-						<img className="skillImg" src={graphql} alt="graphql" />
-					</span>
+
 					<span className="skillBox">
 						<img className="skillImg" src={mysql} alt="mysql" />
 					</span>
