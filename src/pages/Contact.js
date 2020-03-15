@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 
 import mobile3 from "../images/contact/mobile3.png";
@@ -7,7 +7,14 @@ import git from "../images/contact/git.png";
 import tistory from "../images/contact/tistory.png";
 import "./Contact.css";
 
+import * as Scroll from "react-scroll";
+let scroll = Scroll.animateScroll; // You can also use <link> for styles
+
 function Contact() {
+	useEffect(() => {
+		scroll.scrollToTop();
+	}, []);
+
 	return (
 		<>
 			<Row gutter={[8, 16]}>

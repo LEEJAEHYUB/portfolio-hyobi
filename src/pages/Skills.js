@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "antd";
+
+import * as Scroll from "react-scroll";
 
 import "./Skills.css";
 import react from "../images/skills/react.png";
@@ -10,16 +12,21 @@ import apollo from "../images/skills/apollo.png";
 import reacthooks from "../images/skills/reacthooks.png";
 import nodejs from "../images/skills/nodejs.png";
 import express from "../images/skills/express.png";
-import graphql from "../images/skills/graphql.png";
 import mysql from "../images/skills/mysql.png";
 import antd from "../images/skills/antd.png";
 
 import git from "../images/skills/git.png";
 import notion from "../images/skills/notion.png";
 import slack from "../images/skills/slack.png";
-import vsc from "../images/skills/vsc.png";
+import vsc from "../images/skills/vsc.png"; // You can also use <link> for styles
+
+let scroll = Scroll.animateScroll;
 
 function Skills() {
+	useEffect(() => {
+		scroll.scrollToTop();
+	}, []);
+
 	return (
 		<>
 			<Row gutter={[8, 16]}>

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
 import "../Project.css";
 
@@ -8,10 +9,12 @@ import { FaGithub, FaAndroid } from "react-icons/fa";
 
 function ProjectDislack() {
 	return (
-		<div className="contentsContainer">
+		<div className="contentsContainer" data-aos="fade-up">
 			<div className="contentPic">
-				<div className="imgBoxText">Click Me!</div>
-				<img className="imgBox" src={firstIntro} alt="firstIntro" />
+				<NavLink to="/Main/Project/dislack">
+					<div className="imgBoxText">Click Me!</div>
+					<img className="imgBox" src={firstIntro} alt="firstIntro" />
+				</NavLink>
 			</div>
 
 			<div className="contentDes">
@@ -25,7 +28,8 @@ function ProjectDislack() {
 				<div style={{ textAlign: "center", width: "100%" }}>
 					<div style={{ marginTop: "3%" }}>
 						<FaGithub
-							size={30}
+							className="projectIcon"
+							size={38}
 							onClick={() => {
 								window.open("https://github.com/LEEJAEHYUB/diSlack_client");
 							}}

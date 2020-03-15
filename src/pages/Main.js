@@ -8,6 +8,9 @@ import Experience from "./Experience";
 import Project from "./Project";
 import Contact from "./Contact";
 import Skills from "./Skills";
+import ProjectSerendipityModal from "./projectPages/ProjectSerendipityModal";
+import ProjectDislackModal from "./projectPages/ProjectDislackModal";
+
 import "./Main.css";
 
 const { Header, Content, Footer } = Layout;
@@ -94,7 +97,7 @@ function Main() {
 				</Header>
 				<Content
 					className="site-layout"
-					style={{ padding: "0 50px", marginTop: 20, height: "1200px", marginBottom: 30, overflow: "scroll" }}
+					style={{ padding: "0 50px", marginTop: 20, height: "1400px", marginBottom: 30 }}
 				>
 					<div className="site-layout-background" style={{ padding: 30, marginTop: "3%" }}>
 						<Switch>
@@ -102,6 +105,8 @@ function Main() {
 							<Route exact path="/portfolio-hyobi/Main/Experience" render={() => <Experience />} />
 							<Route exact path="/portfolio-hyobi/Main/Skills" render={() => <Skills />} />
 							<Route exact path="/portfolio-hyobi/Main/Project" render={() => <Project />} />
+							<Route path="/Main/Project/serendipity" children={<ProjectSerendipityModal />} />
+							<Route path="/Main/Project/dislack" children={<ProjectDislackModal />} />
 							<Route exact path="/portfolio-hyobi/Main/Contact" render={() => <Contact />} />
 						</Switch>
 					</div>

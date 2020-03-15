@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Timeline } from "antd";
 
 import "./Experience.css";
 
+import * as Scroll from "react-scroll";
+let scroll = Scroll.animateScroll; // You can also use <link> for styles
+
 function Experience() {
+	useEffect(() => {
+		scroll.scrollToTop();
+	}, []);
+
 	return (
 		<>
 			<Row gutter={[8, 16]}>
