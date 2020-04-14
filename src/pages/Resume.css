@@ -1,0 +1,8 @@
+.resume-iframe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 700px;
+	height: 1000px;
+}

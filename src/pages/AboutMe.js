@@ -38,14 +38,15 @@ function AboutMe() {
 				<Col span={2} />
 			</Row>
 
-			<Row style={{}} data-aos="fade-up">
-				<Col style={{ fontSize: 50, textAlign: "center" }} span={24}>
+			<Row data-aos="fade-up">
+				<Col style={{ fontSize: "45px", textAlign: "center" }} span={24}>
 					Front-End Developer 🐣
 				</Col>
 			</Row>
 			<Row gutter={[8, 16]} style={{ marginTop: 50 }} data-aos="fade-up">
-				<Col style={{ fontSize: 50, textAlign: "center", cursor: "pointer" }} className="down" span={24}>
+				<Col style={{ fontSize: 50, textAlign: "center" }} className="down" span={24}>
 					<IoIosArrowDropdown
+						style={{ cursor: "pointer" }}
 						onClick={() => {
 							scrollToBottom();
 						}}
@@ -53,7 +54,7 @@ function AboutMe() {
 				</Col>
 			</Row>
 			<Row style={{ marginTop: 200 }} data-aos="fade-up">
-				<Col span={24} style={{ fontSize: 50, textAlign: "center" }}>
+				<Col span={24} style={{ fontSize: 40, textAlign: "center" }}>
 					어제보다 나은 내가 되기를 꿈꾸는 개발자입니다.
 				</Col>
 			</Row>

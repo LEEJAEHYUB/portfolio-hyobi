@@ -1,5 +1,5 @@
 .mainName {
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: bold;
 	text-align: center;
 	display: flex;
@@ -7,7 +7,7 @@
 }
 
 .subName {
-	font-size: 50px;
+	font-size: 45px;
 	margin-top: 1%;
 }
 

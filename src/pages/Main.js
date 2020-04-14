@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "antd/dist/antd.css";
 
 import AboutMe from "./AboutMe";
+import Resume from "./Resume";
 import Experience from "./Experience";
 import Project from "./Project";
 import Contact from "./Contact";
@@ -37,7 +38,7 @@ function Main() {
 						<Menu.Item
 							key="AboutMe"
 							className="naviBarContent"
-							onClick={val => {
+							onClick={(val) => {
 								setItem(val.key);
 							}}
 						>
@@ -47,9 +48,21 @@ function Main() {
 						</Menu.Item>
 
 						<Menu.Item
+							key="Resume"
+							className="naviBarContent"
+							onClick={(val) => {
+								setItem(val.key);
+							}}
+						>
+							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main/Resume">
+								Resume
+							</Link>
+						</Menu.Item>
+
+						<Menu.Item
 							key="Experience"
 							className="naviBarContent"
-							onClick={val => {
+							onClick={(val) => {
 								setItem(val.key);
 							}}
 						>
@@ -61,7 +74,7 @@ function Main() {
 						<Menu.Item
 							key="Skills"
 							className="naviBarContent"
-							onClick={val => {
+							onClick={(val) => {
 								setItem(val.key);
 							}}
 						>
@@ -73,7 +86,7 @@ function Main() {
 						<Menu.Item
 							key="Project"
 							className="naviBarContent"
-							onClick={val => {
+							onClick={(val) => {
 								setItem(val.key);
 							}}
 						>
@@ -85,7 +98,7 @@ function Main() {
 						<Menu.Item
 							key="Contact"
 							className="naviBarContent"
-							onClick={val => {
+							onClick={(val) => {
 								setItem(val.key);
 							}}
 						>
@@ -102,6 +115,7 @@ function Main() {
 					<div className="site-layout-background" style={{ padding: 30, marginTop: "3%" }}>
 						<Switch>
 							<Route exact path="/portfolio-hyobi/Main" render={() => <AboutMe />} />
+							<Route exact path="/portfolio-hyobi/Main/Resume" render={() => <Resume />} />
 							<Route exact path="/portfolio-hyobi/Main/Experience" render={() => <Experience />} />
 							<Route exact path="/portfolio-hyobi/Main/Skills" render={() => <Skills />} />
 							<Route exact path="/portfolio-hyobi/Main/Project" render={() => <Project />} />
