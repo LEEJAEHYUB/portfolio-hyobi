@@ -1,9 +1,6 @@
-/*
-##Device = Desktops
-##Screen = 1281px to higher resolution desktops
-##Device = 데스크탑
-##Screen = 1281px 이상 해상도 데스크탑
-*/
+.project-container {
+	height: 100vh;
+}
 
 .ant-modal-mask {
 	background-color: rgba(0, 0, 0, 0.7);
@@ -18,691 +15,164 @@
 	display: none;
 }
 
-@media (min-width: 1281px) {
-	.projectCard {
-		margin: 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+.projectCard {
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contentsContainer {
+	width: 500px;
+	height: 600px;
+	box-shadow: 2px 2px 2px 2px grey;
+	border-radius: 30px;
+}
+
+.contents {
+	overflow: scroll;
+	text-align: -webkit-center;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.contents::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+
+.content-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.content-desc {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.contentPic {
+	width: 100%;
+	height: 70%;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.imgBoxText {
+	position: absolute;
+
+	top: 42%;
+	left: 28%;
+
+	color: black;
+	font-size: 60px;
+	font-weight: bold;
+
+	opacity: 0;
+
+	transition: all 0.4s ease;
+}
+
+.contentPic img {
+	transition: all 0.3s ease;
+}
+
+.contentPic:hover img {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
+
+.contentPic:hover :not(img) {
+	z-index: 100;
+	opacity: 1;
+}
+
+.contentDes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: -webkit-center;
+
+	width: 100%;
+	height: 28%;
+	text-overflow: clip;
+	overflow: scroll;
+	padding: 0;
+
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.contentDes::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+
+.imgBox {
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.webSite {
+	cursor: pointer;
+}
+
+.projectModal {
+	width: 1200px;
+}
+
+.projectIcon {
+	transition: all ease 0.4s 0s;
+	cursor: pointer;
+}
+
+.projectIcon:hover {
+	color: rgba(29, 189, 96, 0.801);
+	transform: scale(1.5);
+}
+
+@media only screen and (max-width: 900px) {
+	.project-container {
+		height: 180vh;
+	}
+
+	.project-title {
+		margin-top: 20%;
 	}
 
 	.contentsContainer {
-		width: 500px;
-		height: 600px;
-		box-shadow: 2px 2px 2px 2px grey;
-		border-radius: 30px;
+		width: 90%;
+		height: 200px;
+
+		border-radius: 10px;
 	}
 
-	.contents {
-		overflow: scroll;
-		text-align: -webkit-center;
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contents::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.contentPic {
-		width: 100%;
-		height: 70%;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.imgBoxText {
-		position: absolute;
-
-		top: 42%;
-		left: 28%;
-
-		color: black;
-		font-size: 60px;
+	.content-title {
+		font-size: 10px;
 		font-weight: bold;
-
-		opacity: 0;
-
-		transition: all 0.4s ease;
 	}
 
-	.contentPic img {
-		transition: all 0.3s ease;
-	}
-
-	.contentPic:hover img {
-		-webkit-filter: blur(4px);
-		filter: blur(4px);
-	}
-
-	.contentPic:hover :not(img) {
-		z-index: 100;
-		opacity: 1;
-	}
-
-	.contentDes {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		width: 100%;
-		height: 28%;
-		text-overflow: clip;
-		overflow: scroll;
-		padding: 0;
-
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contentDes::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.imgBox {
-		width: 100%;
-		height: 100%;
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
-	}
-
-	.webSite {
-		cursor: pointer;
-	}
-
-	.projectModal {
-		width: 1200px;
+	.content-desc {
+		font-size: 8px;
+		font-weight: bold;
 	}
 
 	.projectIcon {
-		transition: all ease 0.4s 0s;
-		cursor: pointer;
+		width: 15px;
+		height: 15px;
 	}
 
-	.projectIcon:hover {
-		color: rgba(29, 189, 96, 0.801);
-		transform: scale(1.5);
+	.imgBox {
+		height: 100%;
+	}
+
+	.contentDes {
+		display: grid;
 	}
 }
 
-/*
-	##Device = Laptops, Desktops
-	##Screen = B/w 1025px to 1280px
-	##Device = 랩탑, 데스크탑
-	##Screen = 1025px에서 1280px 사이
-	*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-	.projectCard {
-		margin: 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.contentsContainer {
-		width: 500px;
-		height: 600px;
-		box-shadow: 2px 2px 2px 2px grey;
-		border-radius: 30px;
-	}
-
-	.contents {
-		overflow: scroll;
-		text-align: -webkit-center;
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contents::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.contentPic {
-		width: 100%;
-		height: 70%;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.imgBoxText {
-		position: absolute;
-
-		top: 42%;
-		left: 28%;
-
-		color: black;
-		font-size: 60px;
-		font-weight: bold;
-
-		opacity: 0;
-
-		transition: all 0.4s ease;
-	}
-
-	.contentPic img {
-		transition: all 0.3s ease;
-	}
-
-	.contentPic:hover img {
-		-webkit-filter: blur(4px);
-		filter: blur(4px);
-	}
-
-	.contentPic:hover :not(img) {
-		z-index: 100;
-		opacity: 1;
-	}
-
-	.contentDes {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		width: 100%;
-		height: 28%;
-		text-overflow: clip;
-		overflow: scroll;
-		padding: 0;
-
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contentDes::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.imgBox {
-		width: 100%;
-		height: 100%;
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
-	}
-
-	.webSite {
-		cursor: pointer;
-	}
-
-	.projectModal {
-		width: 1200px;
-	}
-
-	.projectIcon {
-		transition: all ease 0.4s 0s;
-		cursor: pointer;
-	}
-
-	.projectIcon:hover {
-		color: rgba(29, 189, 96, 0.801);
-		transform: scale(1.5);
-	}
-}
-
-/*
-	##Device = Tablets, Ipads (portrait),
-	##Screen = B/w 768px to 1024px
-	##Device = 태블릿, 아이패드(세로),
-	##Screen = 768px에서 1024px 사이
-	*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-	.projectCard {
-		margin: 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.contentsContainer {
-		width: 500px;
-		height: 600px;
-		box-shadow: 2px 2px 2px 2px grey;
-		border-radius: 30px;
-	}
-
-	.contents {
-		overflow: scroll;
-		text-align: -webkit-center;
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contents::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.contentPic {
-		width: 100%;
-		height: 70%;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.imgBoxText {
-		position: absolute;
-
-		top: 42%;
-		left: 28%;
-
-		color: black;
-		font-size: 60px;
-		font-weight: bold;
-
-		opacity: 0;
-
-		transition: all 0.4s ease;
-	}
-
-	.contentPic img {
-		transition: all 0.3s ease;
-	}
-
-	.contentPic:hover img {
-		-webkit-filter: blur(4px);
-		filter: blur(4px);
-	}
-
-	.contentPic:hover :not(img) {
-		z-index: 100;
-		opacity: 1;
-	}
-
-	.contentDes {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		width: 100%;
-		height: 28%;
-		text-overflow: clip;
-		overflow: scroll;
-		padding: 0;
-
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contentDes::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.imgBox {
-		width: 100%;
-		height: 100%;
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
-	}
-
-	.webSite {
-		cursor: pointer;
-	}
-
-	.projectModal {
-		width: 1200px;
-	}
-
-	.projectIcon {
-		transition: all ease 0.4s 0s;
-		cursor: pointer;
-	}
-
-	.projectIcon:hover {
-		color: rgba(29, 189, 96, 0.801);
-		transform: scale(1.5);
-	}
-}
-
-/*
-	##Device = Tablets, Ipads (landscape)
-	##Screen = B/w 768px to 1024px
-	##Device = 태블릿, 아이패드(가로)
-	##Screen = 768px에서 1024px 사이
-	*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	.projectCard {
-		margin: 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.contentsContainer {
-		width: 500px;
-		height: 600px;
-		box-shadow: 2px 2px 2px 2px grey;
-		border-radius: 30px;
-	}
-
-	.contents {
-		overflow: scroll;
-		text-align: -webkit-center;
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contents::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.contentPic {
-		width: 100%;
-		height: 70%;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.imgBoxText {
-		position: absolute;
-
-		top: 42%;
-		left: 28%;
-
-		color: black;
-		font-size: 60px;
-		font-weight: bold;
-
-		opacity: 0;
-
-		transition: all 0.4s ease;
-	}
-
-	.contentPic img {
-		transition: all 0.3s ease;
-	}
-
-	.contentPic:hover img {
-		-webkit-filter: blur(4px);
-		filter: blur(4px);
-	}
-
-	.contentPic:hover :not(img) {
-		z-index: 100;
-		opacity: 1;
-	}
-
-	.contentDes {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		width: 100%;
-		height: 28%;
-		text-overflow: clip;
-		overflow: scroll;
-		padding: 0;
-
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contentDes::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.imgBox {
-		width: 100%;
-		height: 100%;
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
-	}
-
-	.webSite {
-		cursor: pointer;
-	}
-
-	.projectModal {
-		width: 1200px;
-	}
-
-	.projectIcon {
-		transition: all ease 0.4s 0s;
-		cursor: pointer;
-	}
-
-	.projectIcon:hover {
-		color: rgba(29, 189, 96, 0.801);
-		transform: scale(1.5);
-	}
-}
-
-/*
-	##Device = Low Resolution Tablets, Mobiles (Landscape)
-	##Screen = B/w 481px to 767px
-	##Device = 저해상도 태블릿, 모바일(가로)
-	##Screen = 481px에서 767px 사이
-	*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-	.projectCard {
-		margin: 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.contentsContainer {
-		width: 500px;
-		height: 600px;
-		box-shadow: 2px 2px 2px 2px grey;
-		border-radius: 30px;
-	}
-
-	.contents {
-		overflow: scroll;
-		text-align: -webkit-center;
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contents::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.contentPic {
-		width: 100%;
-		height: 70%;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.imgBoxText {
-		position: absolute;
-
-		top: 42%;
-		left: 28%;
-
-		color: black;
-		font-size: 60px;
-		font-weight: bold;
-
-		opacity: 0;
-
-		transition: all 0.4s ease;
-	}
-
-	.contentPic img {
-		transition: all 0.3s ease;
-	}
-
-	.contentPic:hover img {
-		-webkit-filter: blur(4px);
-		filter: blur(4px);
-	}
-
-	.contentPic:hover :not(img) {
-		z-index: 100;
-		opacity: 1;
-	}
-
-	.contentDes {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		width: 100%;
-		height: 28%;
-		text-overflow: clip;
-		overflow: scroll;
-		padding: 0;
-
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contentDes::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.imgBox {
-		width: 100%;
-		height: 100%;
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
-	}
-
-	.webSite {
-		cursor: pointer;
-	}
-
-	.projectModal {
-		width: 1200px;
-	}
-
-	.projectIcon {
-		transition: all ease 0.4s 0s;
-		cursor: pointer;
-	}
-
-	.projectIcon:hover {
-		color: rgba(29, 189, 96, 0.801);
-		transform: scale(1.5);
-	}
-}
-
-/*
-	##Device = Most of the Smartphones Mobiles (Portrait)
-	##Screen = B/w 320px to 479px
-	##Device = 대부분의 스마트폰 모바일 기기(세로)
-	##Screen = 320px에서 479px 사이
-	*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-	.projectCard {
-		margin: 5px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.contentsContainer {
-		width: 500px;
-		height: 600px;
-		box-shadow: 2px 2px 2px 2px grey;
-		border-radius: 30px;
-	}
-
-	.contents {
-		overflow: scroll;
-		text-align: -webkit-center;
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contents::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.contentPic {
-		width: 100%;
-		height: 70%;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.imgBoxText {
-		position: absolute;
-
-		top: 42%;
-		left: 28%;
-
-		color: black;
-		font-size: 60px;
-		font-weight: bold;
-
-		opacity: 0;
-
-		transition: all 0.4s ease;
-	}
-
-	.contentPic img {
-		transition: all 0.3s ease;
-	}
-
-	.contentPic:hover img {
-		-webkit-filter: blur(4px);
-		filter: blur(4px);
-	}
-
-	.contentPic:hover :not(img) {
-		z-index: 100;
-		opacity: 1;
-	}
-
-	.contentDes {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		width: 100%;
-		height: 28%;
-		text-overflow: clip;
-		overflow: scroll;
-		padding: 0;
-
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	.contentDes::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera*/
-	}
-
-	.imgBox {
-		width: 100%;
-		height: 100%;
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
-	}
-
-	.webSite {
-		cursor: pointer;
-	}
-
-	.projectModal {
-		width: 1200px;
-	}
-
-	.projectIcon {
-		transition: all ease 0.4s 0s;
-		cursor: pointer;
-	}
-
-	.projectIcon:hover {
-		color: rgba(29, 189, 96, 0.801);
-		transform: scale(1.5);
-	}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
 }

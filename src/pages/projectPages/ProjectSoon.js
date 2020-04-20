@@ -15,10 +15,10 @@ function ProjectSoon() {
 
 			<div className="contentDes">
 				<div>
-					<span style={{ fontSize: "30px", fontWeight: "bold" }}>Coming Soon!</span>
+					<span className="content-title">Coming Soon!</span>
 				</div>
 				<div>
-					<span style={{ fontSize: "25px", fontWeight: "bold" }}>pomodoro App</span>
+					<span className="content-desc">pomodoro App</span>
 				</div>
 
 				<div style={{ textAlign: "center", width: "100%" }}>

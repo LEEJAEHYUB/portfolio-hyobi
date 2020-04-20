@@ -19,14 +19,14 @@ function ProjectDislack() {
 
 			<div className="contentDes">
 				<div>
-					<span style={{ fontSize: "30px", fontWeight: "bold" }}>diSlack</span>
+					<span className="content-title">diSlack</span>
 				</div>
 				<div>
-					<span style={{ fontSize: "25px", fontWeight: "bold" }}>Team Crong - Team Leader</span>
+					<span className="content-desc">Team Crong - Team Leader</span>
 				</div>
 
 				<div style={{ textAlign: "center", width: "100%" }}>
-					<div style={{ marginTop: "3%" }}>
+					<div className="content-icon">
 						<FaGithub
 							className="projectIcon"
 							size={38}

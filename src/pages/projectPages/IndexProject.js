@@ -13,7 +13,9 @@ function ProjectSerendipity() {
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
-					<div style={{ fontSize: "50px", textAlign: "center" }}>PROJECTs</div>
+					<div className="project-title" style={{ fontSize: "50px", textAlign: "center" }}>
+						PROJECTs
+					</div>
 				</Col>
 				<Col span={4} />
 			</Row>

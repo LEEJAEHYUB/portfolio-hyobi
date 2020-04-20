@@ -13,9 +13,9 @@ function Project() {
 	}, []);
 
 	return (
-		<>
+		<div className="project-container">
 			<IndexProject />
-		</>
+		</div>
 	);
 }
 

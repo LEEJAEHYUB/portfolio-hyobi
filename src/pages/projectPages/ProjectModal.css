@@ -10,6 +10,13 @@
 	margin-top: 5%;
 }
 
+.project-detail-title {
+	font-size: 50px;
+	margin-top: 3%;
+
+	text-align: center;
+}
+
 .description {
 	display: flex;
 	flex-direction: column;
@@ -45,4 +52,32 @@
 .myTask {
 	margin-top: 4%;
 	font-size: 40px;
+}
+
+@media all and (max-width: 900px) {
+	.projectContent {
+		height: 100px;
+		width: 300px;
+
+		margin-top: 5%;
+	}
+
+	.description {
+		font-size: 8px;
+	}
+
+	.descriptionP {
+		font-size: 8px;
+		margin-top: 1%;
+	}
+
+	.project-detail-title {
+		font-size: 20px;
+		margin-top: 10%;
+
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
 }

@@ -21,7 +21,7 @@ function ProjectSerendipityModal() {
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
-					<div style={{ fontSize: "50px", textAlign: "center" }}>Serendipity - eat, pray, love</div>
+					<div className="project-detail-title">Serendipity - eat, pray, love</div>
 				</Col>
 				<Col span={4} />
 			</Row>
