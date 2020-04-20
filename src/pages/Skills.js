@@ -28,11 +28,13 @@ function Skills() {
 	}, []);
 
 	return (
-		<>
+		<div className="skill-container">
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
-					<div style={{ fontSize: "50px", textAlign: "center" }}>SKILLs</div>
+					<div className="skill-title" style={{ fontSize: "50px", textAlign: "center" }}>
+						SKILLs
+					</div>
 				</Col>
 				<Col span={4} />
 			</Row>
@@ -106,7 +108,7 @@ function Skills() {
 					</span>
 				</Col>
 			</Row>
-		</>
+		</div>
 	);
 }
 
