@@ -1,3 +1,13 @@
+.contact-container {
+	height: 95vh;
+}
+
+.contact-title {
+	font-size: 50px;
+	margin-top: 3%;
+	text-align: center;
+}
+
 .contactCol {
 	text-align: -webkit-center;
 	margin-top: 4%;
@@ -14,4 +24,27 @@
 .contactText {
 	margin-top: 5%;
 	font-size: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+	.contact-title {
+		font-size: 30px;
+		margin-top: 20%;
+	}
+
+	.contact-container {
+		height: 90vh;
+	}
+
+	.contactCard {
+		width: 70px;
+		height: 70px;
+	}
+
+	.contactText {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
 }

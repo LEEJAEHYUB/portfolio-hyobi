@@ -16,11 +16,11 @@ function Contact() {
 	}, []);
 
 	return (
-		<>
+		<div className="contact-container">
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
-					<div style={{ fontSize: "50px", textAlign: "center" }}>CONTACT</div>
+					<div className="contact-title">CONTACT</div>
 				</Col>
 				<Col span={4} />
 			</Row>
@@ -68,7 +68,7 @@ function Contact() {
 					<div className="contactText">https://hyobi.tistory.com</div>
 				</Col>
 			</Row>
-		</>
+		</div>
 	);
 }
 
