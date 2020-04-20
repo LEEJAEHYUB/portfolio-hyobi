@@ -12,11 +12,11 @@ function Experience() {
 	}, []);
 
 	return (
-		<>
+		<div className="exp-container">
 			<Row gutter={[8, 16]}>
 				<Col span={5}></Col>
 				<Col span={14}>
-					<div style={{ marginTop: "3%", fontSize: "50px", textAlign: "center" }}>EXPERIENCE</div>
+					<div className="exp-title">EXPERIENCE</div>
 					<Timeline className="timeLine" data-aos="fade-up">
 						<Timeline.Item className="timeLineTxt" color="green">
 							<p>2017-08 서경대학교 도시공학과 졸업</p>
@@ -36,7 +36,7 @@ function Experience() {
 				</Col>
 				<Col span={5}></Col>
 			</Row>
-		</>
+		</div>
 	);
 }
 
