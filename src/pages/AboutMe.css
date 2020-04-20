@@ -1,3 +1,15 @@
+.about-container {
+	height: 150vh;
+}
+
+.name-container {
+	margin-top: 3%;
+}
+
+.down {
+	margin-top: 100px;
+}
+
 .mainName {
 	font-size: 60px;
 	font-weight: bold;
@@ -9,6 +21,24 @@
 .subName {
 	font-size: 45px;
 	margin-top: 1%;
+}
+
+.position-name {
+	font-size: 70px;
+	text-align: center;
+}
+.desc {
+	margin-top: 150px;
+	text-align: center;
+}
+.desc-1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+.desc-2 {
+	font-size: 50px;
+	text-align: center;
 }
 
 .ant-row {
@@ -39,3 +69,119 @@
 .down:hover {
 	color: lightcoral;
 }
+
+@media only screen and (max-width: 900px) {
+	.about-container {
+		height: 90vh;
+	}
+
+	.name-container {
+		margin-top: 20%;
+	}
+
+	.site-layout-background {
+		padding: 0;
+	}
+
+	.ant-layout-content .site-layout {
+		padding: 0;
+	}
+
+	.mainName {
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+
+		padding: 0;
+	}
+
+	.subName {
+		font-size: 20px;
+		margin-top: 1%;
+	}
+
+	.position-name {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.desc {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.desc-1 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.desc-2 {
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.down {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+	/* .ant-layout-content .site-layout {
+		height: 100vh;
+	} */
+
+	.site-layout-background {
+		padding: 0;
+	}
+
+	.ant-layout-content .site-layout {
+		padding: 0;
+	}
+
+	.mainName {
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+
+		padding: 0;
+	}
+
+	.subName {
+		font-size: 35px;
+		margin-top: 1%;
+	}
+
+	.position-name {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.desc {
+		margin-top: 35px;
+		text-align: center;
+	}
+
+	.desc-1 {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.desc-2 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.down {
+		margin-top: 50px;
+	}
+}
+/* 
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+	.ant-layout-content .site-layout {
+		height: 200vh;
+	}
+} */

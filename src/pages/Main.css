@@ -2,8 +2,23 @@
 	font-family: "Titillium Web", sans-serif;
 }
 
+.ant-layout-content .site-layout {
+	height: 150vh;
+	padding: 0 50px;
+	margin-top: 20;
+	margin-bottom: 30;
+}
+
 .naviBar {
 	background-color: rgba(125, 142, 240, 0.87);
+	line-height: 40px;
+	float: right;
+	border-radius: 20px;
+	margin-top: 1%;
+}
+
+.link-btn {
+	font-size: 20px;
 }
 
 .naviBarContent {
@@ -14,4 +29,30 @@
 .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
 	background-color: #6c5ce7;
 	font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+	.ant-layout-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.naviBar {
+		line-height: 30px;
+		float: right;
+		border-radius: 15px;
+		margin-top: 5%;
+
+		text-align: center;
+	}
+
+	.naviBarContent {
+		width: 60px;
+		text-align: center;
+	}
+
+	.link-btn {
+		font-size: 10px;
+		text-align: center;
+	}
 }

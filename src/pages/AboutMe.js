@@ -20,11 +20,11 @@ function AboutMe() {
 
 	AOS.init();
 	return (
-		<>
-			<Row gutter={[8, 16]} style={{ marginTop: "7%" }}>
+		<div className="about-container">
+			<Row className="name-container">
 				<Col span={2} />
 				<Col span={20} className="mainName">
-					<Row gutter={[8, 16]}>
+					<Row>
 						<div>[ 이재협, LEEJAEHYUB, HYOBI ]</div>
 						<div className="subName">
 							<Typical
@@ -39,11 +39,12 @@ function AboutMe() {
 			</Row>
 
 			<Row data-aos="fade-up">
-				<Col style={{ fontSize: "45px", textAlign: "center" }} span={24}>
+				<Col className="position-name" span={24}>
 					Front-End Developer 🐣
 				</Col>
 			</Row>
-			<Row gutter={[8, 16]} style={{ marginTop: 50 }} data-aos="fade-up">
+
+			<Row gutter={[8, 16]} className="down-arrow" data-aos="fade-up">
 				<Col style={{ fontSize: 50, textAlign: "center" }} className="down" span={24}>
 					<IoIosArrowDropdown
 						style={{ cursor: "pointer" }}
@@ -53,13 +54,15 @@ function AboutMe() {
 					/>
 				</Col>
 			</Row>
-			<Row style={{ marginTop: 200 }} data-aos="fade-up">
-				<Col span={24} style={{ fontSize: 40, textAlign: "center" }}>
+
+			<Row className="desc" data-aos="fade-up">
+				<Col span={24} className="desc-1">
 					어제보다 나은 내가 되기를 꿈꾸는 개발자입니다.
 				</Col>
 			</Row>
+
 			<Row style={{ marginTop: 20 }} data-aos="fade-up">
-				<Col span={24} style={{ fontSize: 30, textAlign: "center" }}>
+				<Col span={24} className="desc-2">
 					<p className="p1">
 						본인의 코드에 <strong>책임</strong>을 질수 있는 개발자가 되어야 합니다.
 					</p>
@@ -72,7 +75,7 @@ function AboutMe() {
 					</p>
 				</Col>
 			</Row>
-		</>
+		</div>
 	);
 }
 

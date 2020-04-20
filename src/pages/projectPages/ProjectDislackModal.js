@@ -38,7 +38,7 @@ function ProjectDislackModal() {
 							<div className="descriptionP">
 								◼︎ 워크스페이스 생성 및 초대 <br />
 								◼︎ 해당 워크스페이스에서 채널 등록 <br />
-								◼︎ 해당 워크스페이스에 있는 유저에게 <br /> DM보내기 <br />
+								◼︎ 해당 워크스페이스에 있는 유저에게 DM보내기 <br />
 								◼︎ 채널 및 DM에서 채팅이나 게시글 남기기 <br />
 								◼︎ 게시글에 댓글 남기기 <br />
 							</div>

@@ -17,24 +17,15 @@ import "./Main.css";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
+	const HEIGHT = window.innerHeight;
+
 	const [curItem, setItem] = useState("AboutMe");
 
 	return (
 		<Router>
 			<Layout style={{ overflow: "hidden" }}>
 				<Header style={{ position: "fixed", zIndex: 1, width: "100%", backgroundColor: "transparent" }}>
-					<Menu
-						className="naviBar"
-						theme="dark"
-						mode="horizontal"
-						defaultSelectedKeys={[`${curItem}`]}
-						style={{
-							lineHeight: "40px",
-							float: "right",
-							borderRadius: "20px",
-							marginTop: "1%",
-						}}
-					>
+					<Menu className="naviBar" theme="dark" mode="horizontal" defaultSelectedKeys={[`${curItem}`]}>
 						<Menu.Item
 							key="AboutMe"
 							className="naviBarContent"
@@ -42,7 +33,7 @@ function Main() {
 								setItem(val.key);
 							}}
 						>
-							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main">
+							<Link className="link-btn" to="/portfolio-hyobi/Main">
 								About Me
 							</Link>
 						</Menu.Item>
@@ -54,7 +45,7 @@ function Main() {
 								setItem(val.key);
 							}}
 						>
-							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main/Resume">
+							<Link className="link-btn" to="/portfolio-hyobi/Main/Resume">
 								Resume
 							</Link>
 						</Menu.Item>
@@ -66,7 +57,7 @@ function Main() {
 								setItem(val.key);
 							}}
 						>
-							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main/Experience">
+							<Link className="link-btn" to="/portfolio-hyobi/Main/Experience">
 								Experience
 							</Link>
 						</Menu.Item>
@@ -78,7 +69,7 @@ function Main() {
 								setItem(val.key);
 							}}
 						>
-							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main/Skills">
+							<Link className="link-btn" to="/portfolio-hyobi/Main/Skills">
 								Skills
 							</Link>
 						</Menu.Item>
@@ -90,7 +81,7 @@ function Main() {
 								setItem(val.key);
 							}}
 						>
-							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main/Project">
+							<Link className="link-btn" to="/portfolio-hyobi/Main/Project">
 								Project
 							</Link>
 						</Menu.Item>
@@ -102,16 +93,13 @@ function Main() {
 								setItem(val.key);
 							}}
 						>
-							<Link style={{ fontSize: "20px" }} to="/portfolio-hyobi/Main/Contact">
+							<Link className="link-btn" to="/portfolio-hyobi/Main/Contact">
 								Contact
 							</Link>
 						</Menu.Item>
 					</Menu>
 				</Header>
-				<Content
-					className="site-layout"
-					style={{ padding: "0 50px", marginTop: 20, height: "1400px", marginBottom: 30 }}
-				>
+				<Content className="site-layout">
 					<div className="site-layout-background" style={{ padding: 30, marginTop: "3%" }}>
 						<Switch>
 							<Route exact path="/portfolio-hyobi/Main" render={() => <AboutMe />} />

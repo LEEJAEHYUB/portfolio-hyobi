@@ -1,11 +1,35 @@
-div.mainTxt {
+.mainTxt {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: bold;
 	font-size: 70px;
 	text-align: center;
+
+	margin-top: 17%;
 }
 
-div.nextBtn {
+.nextBtn {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+	.mainTxt {
+		font-family: "Titillium Web", sans-serif;
+		font-weight: bold;
+		font-size: 40px;
+		text-align: center;
+
+		margin-top: 20%;
+	}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+	.mainTxt {
+		font-family: "Titillium Web", sans-serif;
+		font-weight: bold;
+		font-size: 40px;
+		text-align: center;
+
+		margin-top: 20%;
+	}
 }

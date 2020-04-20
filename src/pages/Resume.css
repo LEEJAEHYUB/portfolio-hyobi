@@ -6,3 +6,9 @@
 	width: 700px;
 	height: 1000px;
 }
+
+.resume-link {
+	/* text-align: center; */
+	display: flex;
+	justify-content: center;
+}

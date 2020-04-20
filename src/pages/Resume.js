@@ -17,6 +17,9 @@ function Resume() {
 
 	return (
 		<>
+			<a className="resume-link" href={"https://drive.google.com/open?id=1dNmrnT3xXBjriLFdDQKcSDg0qBqR9vb7"}>
+				모바일용 이력서
+			</a>
 			<Row gutter={[8, 16]} style={{ marginTop: "7%" }}>
 				<iframe title="resume" className="resume-iframe" src={resume} />
 			</Row>

@@ -15,7 +15,7 @@ function Intro() {
 	return !goMain ? (
 		<Router>
 			<Layout style={{ height: "920px", background: "transparent", alignItems: "center" }}>
-				<div className="mainTxt" style={{ marginTop: "17%" }}>
+				<div className="mainTxt">
 					<Typical style={{}} steps={[`<Welcome To Hyobi's PortFolio />`, 1000000]} loop={10} wrapper="p" />
 				</div>
 
