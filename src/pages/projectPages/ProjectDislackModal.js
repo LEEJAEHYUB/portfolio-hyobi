@@ -13,7 +13,7 @@ import "./ProjectDislackModal.css";
 
 function ProjectDislackModal() {
 	return (
-		<>
+		<div className="project-detail-container">
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
@@ -135,7 +135,7 @@ function ProjectDislackModal() {
 					</div>
 				</Col>
 			</Row>
-		</>
+		</div>
 	);
 }
 

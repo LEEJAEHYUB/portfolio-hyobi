@@ -1,3 +1,7 @@
+.project-detail-container {
+	height: 150vh;
+}
+
 .projectContent {
 	box-shadow: 1px 1px 1px 1px grey;
 
@@ -5,7 +9,7 @@
 	flex-direction: row;
 
 	height: 300px;
-	width: 730px;
+	width: 700px;
 
 	margin-top: 5%;
 }
@@ -16,7 +20,7 @@
 
 	justify-content: center;
 
-	font-size: 18px;
+	font-size: 20px;
 	padding: 3px;
 	margin-left: 1%;
 
@@ -32,7 +36,7 @@
 
 .descriptionP {
 	padding: 3px;
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 1%;
 }
 
@@ -44,4 +48,42 @@
 .myTask {
 	margin-top: 4%;
 	font-size: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+	.projectContent {
+		margin-top: 5%;
+
+		height: 100px;
+	}
+
+	.description {
+		font-size: 5px;
+		padding: 5%;
+	}
+
+	.descriptionP {
+		height: 30%;
+
+		font-size: 5px;
+		margin-top: 1%;
+	}
+
+	.project-detail-title {
+		font-size: 20px;
+		margin-top: 10%;
+
+		text-align: center;
+	}
+
+	.img {
+		border-radius: 5px;
+	}
+
+	.project-detail-container {
+		height: 90vh;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
 }

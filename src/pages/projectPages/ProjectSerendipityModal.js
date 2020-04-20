@@ -17,7 +17,7 @@ import "./ProjectModal.css";
 
 function ProjectSerendipityModal() {
 	return (
-		<>
+		<div className="project-detail-container">
 			<Row gutter={[8, 16]}>
 				<Col span={4} />
 				<Col span={16}>
@@ -148,7 +148,7 @@ function ProjectSerendipityModal() {
 					</div>
 				</Col>
 			</Row>
-		</>
+		</div>
 	);
 }
 
